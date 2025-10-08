@@ -6,7 +6,7 @@ This project implements a Customer Segmentation system using unsupervised learni
 
 ---
 
-## Features
+## Features 
 - Data preprocessing with scaling using `StandardScaler`
 - Customer segmentation using KMeans clustering
 - REST API for prediction built with FastAPI
@@ -144,3 +144,4 @@ pytest tests/
 Feel free to fork, raise issues or contribute improvements.
 
 ---
+
