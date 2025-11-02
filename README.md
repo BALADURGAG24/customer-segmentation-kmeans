@@ -4,7 +4,7 @@
 ## Overview
 This project implements a Customer Segmentation system using unsupervised learning (KMeans clustering) in Python. The goal is to segment customers into different groups based on their age, annual income, and spending score to enable targeted marketing strategies and better customer understanding.
 
----
+--- 
 
 ## Features 
 - Data preprocessing with scaling using `StandardScaler`
@@ -144,5 +144,6 @@ pytest tests/
 Feel free to fork, raise issues or contribute improvements.
 
 ---
+
 
 
