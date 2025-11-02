@@ -10,7 +10,7 @@ This project implements a Customer Segmentation system using unsupervised learni
 - Data preprocessing with scaling using `StandardScaler` 
 - Customer segmentation using KMeans clustering
 - REST API for prediction built with FastAPI
-- Interactive dashboard using Streamlit for user input and visualization
+- Interactive dashboard using Streamlit for user input and visualization 
 - PCA-based cluster visualization 
 - Dockerized deployment for both API and dashboard
 - Logging and error handling for robust production-level usage
@@ -144,6 +144,7 @@ pytest tests/
 Feel free to fork, raise issues or contribute improvements.
 
 ---
+
 
 
 
