@@ -20,39 +20,42 @@ This project implements a Customer Segmentation system using unsupervised learni
 
 ## Project Structure
 ```
-customer_segmentation/
-├── data/                                # Contains raw and potentially processed datasets
-│   └── raw/
-│       └── customers.csv                # Input CSV file with customer attributes (age, income, score)
-│
-├── src/                                 # Core logic of the pipeline
-│   ├── data_processing.py               # Functions for loading and preparing raw data
-│   ├── feature_engineering.py           # Functions to create or scale features (scaler save/load)
-│   ├── model.py                         # Functions to train, save, load, and predict using the KMeans model
-│   └── utils.py                         # Common utilities (e.g., logging config)
-│
-├── api/                                 # FastAPI backend to serve prediction API
-│   └── main.py                          # Main FastAPI app that loads model and handles prediction requests
-│
-├── streamlit_app/                       # Streamlit frontend for interactive UI
-│   └── dashboard.py                     # Streamlit app for taking inputs, predicting segment, and visualizing clusters
-│
-├── models/                              # Stores serialized artifacts
-│   ├── kmeans_model.pkl                 # Trained KMeans clustering model
-│   └── scaler.pkl                       # Scaler used for feature normalization
-│
-├── tests/                               # Unit tests for critical logic
-│   ├── test_model.py                    # Tests for model training and prediction
-│   └── test_feature_engineering.py      # Tests for feature transformation and scaler loading
-│
-├── Dockerfile.api                       # Dockerfile to containerize FastAPI backend
-├── Dockerfile.dashboard                 # Dockerfile to containerize Streamlit frontend
-├── docker-compose.yml                   # Docker Compose file to run both API and dashboard containers
-├── requirements.txt                     # List of Python dependencies to reproduce the environment
-├── run_pipeline.py                      # Pipeline script to preprocess data and train/save model + scaler
-├── README.md                            # Project overview, instructions, and setup guide
-└── .gitignore                           # Git ignore rules (e.g., ignore models, __pycache__)
-
+Directory structure:
+└── baladurgag24-customer-segmentation-kmeans/
+    ├── README.md
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── LICENSE
+    ├── requirements.txt
+    ├── run_pipeline.py
+    ├── setup.py
+    ├── api/
+    │   ├── main.py
+    │   └── __pycache__/
+    ├── data/
+    │   └── raw/
+    │       └── customers.csv
+    ├── models/
+    │   ├── kmeans_model.pkl
+    │   └── scaler.pkl
+    ├── notebooks/
+    │   └── EDA.ipynb
+    ├── src/
+    │   ├── __init__.py
+    │   ├── config.py
+    │   ├── data_loader.py
+    │   ├── evaluate.py
+    │   ├── feature_engineering.py
+    │   ├── logger.py
+    │   ├── model.py
+    │   ├── preprocessing.py
+    │   ├── utils.py
+    │   └── __pycache__/
+    ├── streamlit_app/
+    │   └── dashboard.py
+    └── tests/
+        ├── __init__.py
+        └── test_model.py
 ```
 
 ---
@@ -144,6 +147,7 @@ pytest tests/
 Feel free to fork, raise issues or contribute improvements.
 
 ---
+
 
 
 
